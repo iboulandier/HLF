@@ -22,8 +22,6 @@ def crear_barco(eslora):
         for pos in np.arange(eslora -1):
             barco.append((pos_ini [0], pos_ini[1] + p))
             p = p + 1 #El bucle for repite su bloque. Al llegar al final del bloque, Python vuelve al for, y si quedan vueltas, ejecuta otra vez las mismas líneas de dentro. Por eso el orden dentro del bloque importa: append va primero (usa p tal como está) y p = p + 1 va después (lo prepara para la vuelta siguiente).
-    else:
-        for pos in np.arange(eslora -1):
     return barco
 
 #3 Función crear flota
@@ -78,7 +76,7 @@ def disparar(tablero_barcos_rival, tablero_disparos_jugador):
         print("Fuera del tablero")
         return False
 
-    if tablero_barcos_rival[fila, columna] == "O":
+    if tablero_barcos_rival[fila, columna] == "O"
         tablero_barcos_rival[fila, columna] = "X"
         tablero_disparos_jugador[fila, columna] = "X"
         print("¡Tocado!")
