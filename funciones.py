@@ -76,7 +76,7 @@ def disparar(tablero_barcos_rival, tablero_disparos_jugador):
         print("Fuera del tablero")
         return False
 
-    if tablero_barcos_rival[fila, columna] == "O"
+    if tablero_barcos_rival[fila, columna] == "O":
         tablero_barcos_rival[fila, columna] = "X"
         tablero_disparos_jugador[fila, columna] = "X"
         print("¡Tocado!")
